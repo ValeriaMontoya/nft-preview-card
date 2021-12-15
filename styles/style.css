@@ -43,12 +43,17 @@ main .card {
   margin-bottom: 30px;
 }
 
-main .card figure img {
+main .card .nft-image {
   width: 100%;
   border-radius: 8px;
 }
 
-main .card .container h1 {
+/* main .card .view-icon {
+  display: none;
+} */
+
+main .card .container h1 a {
+  text-decoration: none;
   color: var(--white);
   font-size: var(--heading-font-size);
   margin: 25px 0 15px;
@@ -97,11 +102,20 @@ main .card .author img {
   margin-right: 20px;
 }
 
-main .card .author span {
+main .card .author a {
   font-weight: 400;
   color: var(--white);
+  text-decoration: none;
+}
+
+footer {
+  font-size: 1.6rem;
 }
 
 footer a {
   color: var(--primary-soft-blue);
+}
+
+footer a:hover {
+  color: var(--primary-cyan);
 }
