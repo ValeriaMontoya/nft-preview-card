@@ -40,7 +40,36 @@ main .card {
   background-color: var(--card-bg);
   border-radius: 16px;
   padding: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
+}
+
+main .card .image-container {
+  position: relative;
+  margin-bottom: 1.4rem;
+}
+
+main .card .image-container div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 50%);
+  width: 100%;
+  height: calc(100% - 4px);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+main .card .image-container div:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+main .card .image-container div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 main .card .nft-image {
@@ -48,15 +77,18 @@ main .card .nft-image {
   border-radius: 8px;
 }
 
-/* main .card .view-icon {
-  display: none;
-} */
+main .card .container h1 {
+  margin: 25px 0 15px;
+}
 
 main .card .container h1 a {
   text-decoration: none;
   color: var(--white);
   font-size: var(--heading-font-size);
-  margin: 25px 0 15px;
+}
+
+main .card .container h1 a:hover {
+  color: var(--primary-cyan);
 }
 
 main .card .container p {
@@ -106,6 +138,10 @@ main .card .author a {
   font-weight: 400;
   color: var(--white);
   text-decoration: none;
+}
+
+main .card .author a:hover {
+  color: var(--primary-cyan);
 }
 
 footer {

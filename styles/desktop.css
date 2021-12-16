@@ -16,11 +16,3 @@
 body {
   padding: 15vh 20vw;
 }
-
-main .card .container h1 a:hover {
-  color: var(--primary-cyan);
-}
-
-main .card .author a:hover {
-  color: var(--primary-cyan);
-}
