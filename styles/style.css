@@ -45,7 +45,7 @@ main .card {
 
 main .card .image-container {
   position: relative;
-  margin-bottom: 1.4rem;
+  margin-bottom: 14px;
 }
 
 main .card .image-container div {
